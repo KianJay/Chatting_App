@@ -11,7 +11,6 @@ import ColorContext from '../join/theme/Color'
 import SelectColors from '../join/theme/SelectColors'
 
 let socket;
-
 const Chat = ({ location }) => {
   const{state}=useContext(ColorContext)
   const [name, setName] = useState('');
