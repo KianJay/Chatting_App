@@ -10,7 +10,6 @@ import ColorContext from '../join/theme/Color'
 
 import SelectColors from '../join/theme/SelectColors'
 
-
 let socket;
 
 const Chat = ({ location }) => {
@@ -20,7 +19,7 @@ const Chat = ({ location }) => {
   const [users, setUsers] = useState('');
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = 'https://project-chat-application.herokuapp.com/';
+  const ENDPOINT = 'https://react-real-time-chat-app.herokuapp.com/';
 
 
   useEffect(() => {
@@ -64,7 +63,6 @@ const Chat = ({ location }) => {
 
   return (
 
-
   <div style={{display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
@@ -82,12 +80,4 @@ const Chat = ({ location }) => {
   </div>
   );
 }
-
 export default Chat;
-
-/* display: 'flex',
-  justifyContent: 'column',
-  alignItems: 'center',
-  height: '100vh',
-    backgroundColor:state.color*/
- 

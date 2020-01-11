@@ -17,7 +17,7 @@ const SelectColors = () => {
                   <div key={color}
                   style={{
                    background:color,
-                    width:'75px',
+                    width:'100px',
                     height:'20px',
                    cursor: 'pointer'}}
                    onClick ={()=> actions.setColor(color)}  />

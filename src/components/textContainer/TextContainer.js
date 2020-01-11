@@ -10,7 +10,7 @@ const TextContainer = ({ users }) => (
     <div>
       <h2>Realtime Chatting <MdLiveTv /><br/>
        customizing the theme color<MdColorLens /></h2>
-      <h5>built with React<DiReact style={{fontSize:'35px'}}/>, Express, Node <DiNodejs  style={{fontSize:'35px'}} /> and Socket.IO</h5>
+      <h5>built with React<DiReact style={{fontSize:'35px'}}/>, Express, Node <DiNodejs  style={{fontSize:'40px'}} /> and Socket.IO</h5>
       <hr/>
 
     </div>
