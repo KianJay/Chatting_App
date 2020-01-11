@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import { Link } from "react-router-dom";
-
 import './Join.css';
 
-export default function SignIn() {
+
+const SignIn = () => {
   const [name, setName] = useState('');
   const [room, setRoom] = useState('');
+ 
 
   return (
-    <div className="joinOuterContainer">
+
+    <div className='joinOuterContainer'>
       <div className="joinInnerContainer">
-        <h1 className="heading">Join</h1>
+        <h1 className="heading">Log In</h1>
         <div>
           <input placeholder="Name" className="joinInput" type="text" onChange={(event) => setName(event.target.value)} />
         </div>
@@ -24,3 +26,5 @@ export default function SignIn() {
     </div>
   );
 }
+
+export default SignIn

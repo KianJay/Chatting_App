@@ -1,8 +1,6 @@
-import React from './node_modules/react';
-
+import React from 'react';
 import './Message.css';
-
-import ReactEmoji from './node_modules/react-emoji';
+import ReactEmoji from 'react-emoji';
 
 const Message = ({ message: { text, user }, name }) => {
   let isSentByCurrentUser = false;
@@ -12,7 +10,6 @@ const Message = ({ message: { text, user }, name }) => {
   if(user === trimmedName) {
     isSentByCurrentUser = true;
   }
-
   return (
     isSentByCurrentUser
       ? (

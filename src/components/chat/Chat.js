@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState, useEffect, useContext} from 'react'
 import queryString from 'query-string'
 import io from 'socket.io-client'
 import './Chat.css'
@@ -6,16 +6,22 @@ import InfoBar from '../infoBar/InfoBar'
 import Input from '../input/Input'
 import Messages from '../messages/Messages'
 import TextContainer from '../textContainer/TextContainer'
+import ColorContext from '../join/theme/Color'
+
+import SelectColors from '../join/theme/SelectColors'
+
 
 let socket;
 
 const Chat = ({ location }) => {
+  const{state}=useContext(ColorContext)
   const [name, setName] = useState('');
   const [room, setRoom] = useState('');
   const [users, setUsers] = useState('');
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
   const ENDPOINT = 'https://project-chat-application.herokuapp.com/';
+
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
@@ -57,15 +63,31 @@ const Chat = ({ location }) => {
   }
 
   return (
-    <div className="outerContainer">
+
+
+  <div style={{display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  height: '100vh',
+    backgroundColor:state.color}}> 
+        
       <div className="container">
-          <InfoBar room={room} />
-          <Messages messages={messages} name={name} />
+<SelectColors />
+          <InfoBar room={room}/>
+          <Messages messages={messages} name={name} /> 
           <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
       </div>
-      <TextContainer users={users}/>
-    </div>
+      <TextContainer users={users} />
+     
+  </div>
   );
 }
 
 export default Chat;
+
+/* display: 'flex',
+  justifyContent: 'column',
+  alignItems: 'center',
+  height: '100vh',
+    backgroundColor:state.color*/
+ 

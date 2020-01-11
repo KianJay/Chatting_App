@@ -1,8 +1,5 @@
-  
 import React from 'react';
-
 import ScrollToBottom from 'react-scroll-to-bottom';
-
 import Message from './message/Message';
 
 import './Messages.css';
