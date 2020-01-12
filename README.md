@@ -1,4 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deployed - https://youthful-hermann-322802.netlify.com
+
+real time chatting web application version 1
+now you can customzing the theme color
+
+using React.js & Node.js, Express and Socket Io
+based on Hook.
+
 
 ## Available Scripts
 
