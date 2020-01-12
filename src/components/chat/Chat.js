@@ -1,4 +1,5 @@
-import React,{useState, useEffect, useContext} from 'react'
+
+import React, {useState, useEffect, useContext} from 'react'
 import queryString from 'query-string'
 import io from 'socket.io-client'
 import './Chat.css'
@@ -11,15 +12,17 @@ import ColorContext from '../join/theme/Color'
 import SelectColors from '../join/theme/SelectColors'
 
 let socket;
+ 
 const Chat = ({ location }) => {
-  const{state}=useContext(ColorContext)
+
+const{state}=useContext(ColorContext)
+
   const [name, setName] = useState('');
   const [room, setRoom] = useState('');
   const [users, setUsers] = useState('');
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
-  const ENDPOINT ='';
-  
+  const ENDPOINT = 'localhost:5000';
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
@@ -59,7 +62,6 @@ const Chat = ({ location }) => {
       socket.emit('sendMessage', message, () => setMessage(''));
     }
   }
-
   return (
 
   <div style={{display: 'flex',

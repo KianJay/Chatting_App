@@ -1,11 +1,11 @@
-const http = require('http');
-const express = require('express');
-const socketio = require('socket.io');
-const cors = require('cors');
+const http = require('http')
+const express = require('express')
+const socketio = require('socket.io')
+const cors = require('cors')
 
-const { addUser, removeUser, getUser, getUsersInRoom } = require('./users');
+const { addUser, removeUser, getUser, getUsersInRoom } = require('./users')
 
-const router = require('./router');
+const router = require('./router')
 
 const app = express();
 const server = http.createServer(app);
@@ -22,7 +22,7 @@ io.on('connect', (socket) => {
 
     socket.join(user.room);
 
-    socket.emit('message', { user: 'admin', text: `${user.name}, You are in room ${user.room}.`});
+    socket.emit('message', { user: 'admin', text: `${user.name}, welcome to room ${user.room}.`});
     socket.broadcast.to(user.room).emit('message', { user: 'admin', text: `${user.name} has joined!` });
 
     io.to(user.room).emit('roomData', { room: user.room, users: getUsersInRoom(user.room) });
@@ -48,4 +48,4 @@ io.on('connect', (socket) => {
   })
 });
 
-server.listen(process.env.PORT || 4000, () => console.log(`Server has started.`))
+server.listen(process.env.PORT || 5000, () => console.log(`Server has started.`));
