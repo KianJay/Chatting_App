@@ -1,5 +1,5 @@
 # Real Time Chatting With Customising Background
-Duyoung Jang(Kian)
+Duyoung Jang(Kian)</br>
 Simply, login with your name and room number to join and have a chat with your friends on real-time
 
 ## Motivation
