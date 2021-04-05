@@ -3,7 +3,7 @@ Duyoung Jang(Kian)</br>
 Simply, login with your name and room number to join and have a chat with your friends on real-time
 
 ## Motivation
-To experience building a real-time based application with React.js and Socket.IO , I decided to develop and make a real-time chatting application. <p>Inspired by JavaScript Mastery</p>
+<p> To experience building a real-time based application with React.js and Socket.IO , I decided to develop and make a real-time chatting application.Inspired by JavaScript Mastery</p>
 
 ## Frameworks or Library 
 Built with React.js, Express.js, Node.js and Soket.IO </br>
