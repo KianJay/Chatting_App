@@ -1,7 +1,7 @@
 # Real Time Chatting With Customising Background
 Duyoung Jang(Kian)</br>
 Simply, login with your name and room number to join and have a chat with your friends on real-time
-
+[Chatting App](https://youthful-hermann-322802.netlify.com) 
 ## Motivation
 <p> To experience building a real-time based application with React.js and Socket.IO , I decided to develop and make a real-time chatting application. Inspired by JavaScript Mastery</p>
 
