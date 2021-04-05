@@ -6,7 +6,7 @@ Simply, login with your name and room number to join and have a chat with your f
 ## Motivation
 <p> To experience building a real-time based application with React.js and Socket.IO , I decided to develop and make a real-time chatting application. Inspired by JavaScript Mastery</p>
 
-## Frameworks or Library 
+## Frameworks or Libraries
 Built with React.js, Express.js, Node.js and Soket.IO, and Netlify to deploy the application </br>
 Context api, Hooks, CSS
 ### To set-up
