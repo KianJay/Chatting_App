@@ -1,6 +1,6 @@
 # Real Time Chatting With Customising Background
 Duyoung Jang(Kian)</br>
-[Chatting App](https://youthful-hermann-322802.netlify.com) Deployed by Netlify</br>
+[Chatting App](https://youthful-hermann-322802.netlify.com) Deployed With Netlify</br>
 Simply, login with your name and room number to join and have a chat with your friends on real-time
 
 ## Motivation
