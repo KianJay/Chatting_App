@@ -1,4 +1,4 @@
-# Real Time Chatting With Customising Background
+# Real Time Chatting With Customising Background color
 Duyoung Jang(Kian)</br>
 [Chatting App](https://youthful-hermann-322802.netlify.com) Deployed With Netlify</br>
 Simply, login with your name and room number to join and have a chat with your friends on real-time
@@ -7,7 +7,7 @@ Simply, login with your name and room number to join and have a chat with your f
 <p> To experience building a real-time based application with React.js and Socket.IO , I decided to develop and make a real-time chatting application. Inspired by JavaScript Mastery</p>
 
 ## Stacks And Libraries
-Built with React.js, Express.js, Node.js and Soket.IO, and Netlify to deploy the application </br>
+Built with React.js, Express.js, Node.js and Soket.IO, and Netlify to deploy [The Chatting App](https://youthful-hermann-322802.netlify.com) </br>
 Context api, Hooks, CSS
 ### To set-up
 run npm i && npm start for both client and server side to start the development server
